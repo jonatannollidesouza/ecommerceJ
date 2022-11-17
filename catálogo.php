@@ -80,7 +80,7 @@ body {
 
   <a class="btn btn-outline-warning" href="index.php" role="button"> Página Inicial</a>
   <a class="btn btn-outline-warning" href="catálogo.php" role="button">Catálogo</a>
-  <a class="btn btn-outline-warning" href="anuncprod.php" role="button">Anunciar Produto</a>
+  <a class="btn btn-outline-warning" href="cadastro.php" role="button">Anunciar Produto</a>
   <a class="btn btn-outline-warning" href="contato.php" role="button"> Contato</a>
 
   
@@ -104,18 +104,23 @@ body {
                     while($produtos = $produtos_prepara->fetch()) {
                       echo "<br>";
                       echo "<br>";
-                      echo "<div class=w3-third'>";
+                        echo "<div class='w3-row-padding'>";
+                            echo "<div class='w3-third'>";
                             echo "<div class='w3-card'>";
-                            echo"<img class='mx-auto' src='ecommerce2/imagens/" .$produtos['imagem'].".jpg' alt='"."'image' height='600' width='400'>";
-                            echo "<div class='w3-container'>";
-                            echo"<h2>" .$produtos['descricao']."</h2>";
-                            echo"<h3>" .$produtos['valor']."</h3>";
-                            //echo"<p>" .$produtos['caracteristicas']."</p>";
+                              echo"<img class='mx-auto' src='imagens/" .$produtos['imagem']."' alt='image' height='600' width='400'>";
+                              echo "<div class='w3-container'>";
+                                echo"<h2>" .$produtos['descricao']."</h2>";
+                                echo"<h3>" .$produtos['valor']."</h3>";
+                                echo"<p>" .$produtos['caracteristicas']."</p>";
 
+                        echo"</div>";
                             echo"</div>";
                             echo"</div>";
+                              echo"</div>";
                          
-                            echo"</div>";
+                            
+
+
                             echo "<br>";
                             echo "<br>";
                          

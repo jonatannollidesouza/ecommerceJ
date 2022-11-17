@@ -53,7 +53,7 @@ body {
 
 .menu{
   padding: 90px;
-  background-color:black;
+  background-color:white;
 }
 
 
@@ -84,7 +84,7 @@ body {
 
   <a class="btn btn-outline-warning" href="index.php" role="button"> Página Inicial</a>
   <a class="btn btn-outline-warning" href="catálogo.php" role="button">Catálogo</a>
-  <a class="btn btn-outline-warning" href="anuncprod.php" role="button">Anunciar Produto</a>
+  <a class="btn btn-outline-warning" href="cadastro.php" role="button">Anunciar Produto</a>
   <a class="btn btn-outline-warning" href="contato.php" role="button"> Contato</a>
 
   
